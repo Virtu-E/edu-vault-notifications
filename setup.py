@@ -23,10 +23,11 @@ setup(
     description='GitHub notifications alike app for Django.',
     long_description=open('README.md').read(),
     long_description_content_type="text/markdown",
-    author='django-notifications team',
-    author_email='yang@yangyubo.com',
-    url='http://github.com/django-notifications/django-notifications',
+    author='Kondwani Kamundi - Modified Version',
+    author_email='kkamundi@gmail.com',
+    url='https://github.com/Virtu-E/edu-vault-notifications',
     install_requires=[
+        'rest_framework',
         'django>=4.2,<5.3',
         'django-model-utils>=3.1.0',
         'jsonfield>=2.1.0',
@@ -41,7 +42,6 @@ setup(
     packages=[
         'notifications',
         'notifications.base',
-        'notifications.templatetags',
         'notifications.migrations',
     ],
     include_package_data=True,
